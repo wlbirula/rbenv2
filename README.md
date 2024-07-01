@@ -44,20 +44,25 @@ On systems with Homebrew package manager, the “Using Package Managers” metho
    ```sh
    sudo apt install rbenv
    ```
-   
+   In Debian you should install also the dependecies:
+
+   ```sh
+   sudo apt install ruby-psych libffi-dev libyaml-dev  
+   ```
+
    #### Arch Linux and its derivatives
    
    Archlinux has an [AUR Package](https://aur.archlinux.org/packages/rbenv/) for
    rbenv and you can install it from the AUR using the instructions from this
    [wiki page](https://wiki.archlinux.org/index.php/Arch_User_Repository#Installing_and_upgrading_packages).
 
-2. Set up your shell to load rbenv.
+3. Set up your shell to load rbenv.
 
     ```sh
     rbenv init
     ```
 
-3. Close your Terminal window and open a new one so your changes take effect.
+4. Close your Terminal window and open a new one so your changes take effect.
 
 That's it! You are now ready to [install some Ruby versions](#installing-ruby-versions).
 
